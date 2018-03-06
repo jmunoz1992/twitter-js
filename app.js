@@ -14,19 +14,9 @@ app.use(volleyball);
 app.use('/', routes);
 
 app.listen(3000, (err) => {
-  if (err) throw console.log(chalk.red('Error found: ', err));
-  console.log('Listening on port 3000');
+  if (err) return console.log(chalk.red('Error found: ', err));
+  console.log('http://localhost:3000/ Listening to port 3000');
 });
-
-
-// app.use((req, res, next) => {
-//   console.log(req.method + ' ' + req.path + ' / ' + res.statusCode);  // should be GET /
-//   next();
-// });
-
-// app.use('/special', (req, res, next) => {
-//   console.log('You are in a special area');
-// });
 
 app.get('/', function (req, res, next) {
   // res.status(200);
@@ -37,6 +27,3 @@ app.get('/', function (req, res, next) {
     });
 });
 
-// app.get('/news', function (req, res, next) {
-//   res.status(200).send('News Page!');
-// });

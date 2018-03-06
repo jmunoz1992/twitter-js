@@ -1,6 +1,25 @@
 const _ = require('lodash');
 
-let data = []; // list of tweets
+let data = [ { name: 'Kate Claujure',
+content: 'Fullstack Academy is sweet! The instructors are just so amazing. #fullstacklove #codedreams' },
+{ name: 'Gabriel OLogn',
+content: 'Fullstack Academy is awesome! The instructors are just so awesome. #fullstacklove #codedreams' },
+{ name: 'Karen Docsreader',
+content: 'Fullstack Academy is impressive! The instructors are just so impressive. #fullstacklove #codedreams' },
+{ name: 'Kate Ternary',
+content: 'Fullstack Academy is wonderful! The instructors are just so sweet. #fullstacklove #codedreams' },
+{ name: 'Dan Ecma',
+content: 'Fullstack Academy is breathtaking! The instructors are just so breathtaking. #fullstacklove #codedreams' },
+{ name: 'Geoff Docsreader',
+content: 'Fullstack Academy is wonderful! The instructors are just so mindblowing. #fullstacklove #codedreams' },
+{ name: 'Scott OLogn',
+content: 'Fullstack Academy is amazing! The instructors are just so breathtaking. #fullstacklove #codedreams' },
+{ name: 'Nimit Ternary',
+content: 'Fullstack Academy is mindblowing! The instructors are just so impressive. #fullstacklove #codedreams' },
+{ name: 'Dan Binder',
+content: 'Fullstack Academy is breathtaking! The instructors are just so amazing. #fullstacklove #codedreams' },
+{ name: 'Shanna Ecma',
+content: 'Fullstack Academy is wonderful! The instructors are just so breathtaking. #fullstacklove #codedreams' } ]; // list of tweets
 
 function add (name, content) { // adds tweets
   data.push({
@@ -38,6 +57,8 @@ const getFakeTweet = function() {
   return 'Fullstack Academy is ' + randArrayEl(awesomeAdj) + '! The instructors are just so ' + randArrayEl(awesomeAdj) + '. #fullstacklove #codedreams';
 };
 
-for (let i = 0; i < 10; i++) {
-  module.exports.add( getFakeName(), getFakeTweet() );
-}
+// for (let i = 0; i < 10; i++) {
+//   module.exports.add( getFakeName(), getFakeTweet() );
+// }
+
+// console.log(data);
